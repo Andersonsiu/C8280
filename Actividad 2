@@ -245,8 +245,4 @@ Salida:
 2        3        8       13
 La variable sub_df contiene solo las primeras 3 filas y las primeras 3 columnas del DataFrame original.
 
-import pandas as pd
 
-# Lectura desde un archivo CSV
-df = pd.read_csv('Data/mtcars.csv')
-df.head()
