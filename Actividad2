@@ -1,1 +1,28 @@
+**Lectura desde un archivo CSV:**
 
+pythonCopy code
+
+`import pandas as pd
+
+df = pd.read_csv('Data/mtcars.csv')
+df.head()` 
+
+**Escritura en un archivo CSV:**
+
+pythonCopy code
+
+`df.to_csv('Data/nuevo_archivo.csv', index=False)  # No escribe los valores de índice` 
+
+**Lectura desde un archivo de texto (por ejemplo, .txt) con separador de pestaña:**
+
+pythonCopy code
+
+`df = pd.read_csv('Data/mtcars.txt', sep='\t')
+df.head()` 
+
+**Lectura desde un archivo de Excel (por ejemplo, .xlsx) especificando la hoja:**
+
+pythonCopy code
+
+`df = pd.read_excel('Data/mtcars.xlsx', sheet_name='Sheet2')
+df.head()`
